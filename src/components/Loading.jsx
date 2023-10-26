@@ -1,20 +1,5 @@
-import { StyleSheet } from "react-native";
-import AnimatedLoader from "react-native-animated-loader";
+import { Text } from "react-native";
 
 export default function Loading() {
-  return (
-    <AnimatedLoader
-      visible={true}
-      source={require("../assets/lf30_editor_qngy49ar.json")}
-      animationStyle={styles.lottie}
-      speed={1}
-    />
-  );
+    return <Text>{"Loading..."}</Text>;
 }
-
-const styles = StyleSheet.create({
-  lottie: {
-    width: 250,
-    height: 250,
-  },
-});
